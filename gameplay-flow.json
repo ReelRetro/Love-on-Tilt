@@ -1,0 +1,119 @@
+{
+  "schema": "love-on-tilt/gameplay-flow@1",
+  "version": "1.1.0",
+  "primaryObjective": {
+    "type": "earned-profile-reveals",
+    "targetPerSession": 3,
+    "progressSymbol": "heart",
+    "scoreIsSecondary": true,
+    "endSessionAfterTarget": true
+  },
+  "session": {
+    "startingBalls": 3,
+    "maximumExtraBalls": 2,
+    "maximumPlayableBalls": 5,
+    "ballSaveMilliseconds": 8000,
+    "maximumProfileReveals": 3,
+    "prefetchCandidateCount": 3
+  },
+  "reveal": {
+    "requireTargetWord": true,
+    "requireOpenDoorHit": true,
+    "pauseMode": "capture-ball-then-pause-physics",
+    "multiballBehavior": "queue-until-one-ball-remains",
+    "decisionActions": [
+      {
+        "id": "INTERESTED",
+        "label": "INTERESTED",
+        "private": true
+      },
+      {
+        "id": "KEEP_PLAYING",
+        "label": "KEEP PLAYING",
+        "private": true
+      }
+    ],
+    "displayFields": [
+      "theReelYouVideo",
+      "firstName",
+      "age",
+      "generalLocation",
+      "headline",
+      "interests",
+      "verificationIndicator"
+    ],
+    "preventRepeatWithinSession": true,
+    "gameplayNeverRanksProfiles": true
+  },
+  "chemistryRewards": [
+    {
+      "threshold": 25,
+      "reward": "score-multiplier",
+      "value": 2,
+      "durationMilliseconds": 10000
+    },
+    {
+      "threshold": 50,
+      "reward": "reactivate-ball-save"
+    },
+    {
+      "threshold": 75,
+      "reward": "double-date-multiball",
+      "ballCount": 2
+    },
+    {
+      "threshold": 100,
+      "reward": "light-extra-ball-shot",
+      "fallbackAtCap": "super-jackpot"
+    }
+  ],
+  "firstReelAssist": {
+    "enabled": true,
+    "triggerAfterConsecutiveDrainsWithoutReveal": 2,
+    "doorLitMilliseconds": 20000,
+    "waiveTargetWordTemporarily": true,
+    "stillRequiresDoorHit": true
+  },
+  "boards": [
+    {
+      "id": "table-for-two",
+      "targetWord": "CHEERS",
+      "door": "heart-reservation-door",
+      "revealCallout": "YOUR TABLE IS READY!",
+      "specialMode": "toast-time"
+    },
+    {
+      "id": "reel-romance",
+      "targetWord": "REEL",
+      "door": "heart-cinema-screen",
+      "revealCallout": "NOW SHOWING: THE REEL YOU!",
+      "specialMode": "double-feature"
+    },
+    {
+      "id": "bad-date-ghosted",
+      "targetWord": "GHOSTED",
+      "door": "haunted-cemetery-gate",
+      "revealCallout": "SOMEONE NEW APPEARS!",
+      "specialMode": "escape-the-graveyard"
+    }
+  ],
+  "sessionEnd": {
+    "conditions": [
+      "third-profile-decision-recorded",
+      "final-ball-drained"
+    ],
+    "actions": [
+      "PLAY_AGAIN",
+      "RETURN_TO_REEL_LOVE"
+    ],
+    "summaryFields": [
+      "profilesRevealed",
+      "interestDecisionsRecorded",
+      "finalScore",
+      "highestMultiplier",
+      "jackpotsEarned",
+      "extraBallsEarned"
+    ]
+  },
+  "appLevelCosmeticRewards": false
+}

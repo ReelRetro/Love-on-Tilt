@@ -1,0 +1,51 @@
+{
+  "schema": "love-on-tilt/runtime-catalog@1",
+  "version": "1.4.0",
+  "boardCount": 3,
+  "componentTypes": [
+    "ball",
+    "flipper-left",
+    "flipper-right",
+    "plunger",
+    "bumper",
+    "target",
+    "light",
+    "jackpot-door"
+  ],
+  "generatedFrameCount": 90,
+  "uiFrameCount": 53,
+  "totalFrameCount": 143,
+  "gameplayFlow": "gameplay-flow.json",
+  "readableGameplayGuide": "GAMEPLAY-FLOW.md",
+  "profileRevealContract": "integration/profile-reveal-contract.json",
+  "uiEffectsManifest": "assets/ui-common/ui-runtime-manifest.json",
+  "uiEffectsGuide": "UI-ASSET-GUIDE.md",
+  "uiEffectsPreview": "previews/ui-reward-runtime-assets.png",
+  "physicsPlayfieldCatalog": "playfields/playfield-catalog.json",
+  "physicsPlayfieldGuide": "PHYSICS-PLAYFIELD-GUIDE.md",
+  "physicsDebugPreview": "previews/physics-playfields-debug.png",
+  "foregroundOcclusionPreview": "previews/foreground-occlusion-debug.png",
+  "audioManifest": "audio/audio-manifest.json",
+  "audioGuide": "AUDIO-GUIDE.md",
+  "audioPreview": "previews/audio-cue-sheet.png",
+  "boards": [
+    {
+      "id": "table-for-two",
+      "title": "Table for Two",
+      "manifest": "assets/table-for-two/runtime-manifest.json",
+      "preview": "previews/table-for-two-runtime-assets.png"
+    },
+    {
+      "id": "reel-romance",
+      "title": "Reel Romance",
+      "manifest": "assets/reel-romance/runtime-manifest.json",
+      "preview": "previews/reel-romance-runtime-assets.png"
+    },
+    {
+      "id": "bad-date-ghosted",
+      "title": "Bad Date: Ghosted",
+      "manifest": "assets/bad-date-ghosted/runtime-manifest.json",
+      "preview": "previews/bad-date-ghosted-runtime-assets.png"
+    }
+  ]
+}

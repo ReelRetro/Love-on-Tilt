@@ -1,0 +1,15 @@
+{
+  "name": "love-on-tilt-runtime-assets",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:visuals": "node tools/extract_runtime_assets.mjs && node tools/extract_ui_assets.mjs && node tools/build_playfields.mjs",
+    "build:audio": "python3 tools/build_audio.py",
+    "build": "npm run build:visuals && npm run build:audio",
+    "validate": "node tools/validate_assets.mjs && python3 tools/validate_audio.py"
+  },
+  "dependencies": {
+    "sharp": "*"
+  }
+}

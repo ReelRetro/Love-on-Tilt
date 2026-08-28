@@ -1,0 +1,268 @@
+{
+  "schema": "love-on-tilt/runtime-assets@1",
+  "boardId": "table-for-two",
+  "title": "Table for Two",
+  "boardAsset": "../../boards/table-for-two.png",
+  "imageRendering": "pixelated",
+  "units": "pixels",
+  "targetLabels": [
+    "C",
+    "H",
+    "E",
+    "E",
+    "R",
+    "S"
+  ],
+  "targetLabelMode": "runtime-overlay",
+  "themeNotes": "Rose-gold dinner hardware, plate bumpers, reservation-card targets, and a heart-shaped booth door.",
+  "animations": {
+    "ball": {
+      "atlas": "ball/atlas.png",
+      "frameSize": {
+        "width": 192,
+        "height": 192
+      },
+      "frameCount": 4,
+      "fps": 12,
+      "loop": true,
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "frames": [
+        {
+          "state": "spin-0",
+          "file": "ball/frame-00-spin-0.png"
+        },
+        {
+          "state": "spin-1",
+          "file": "ball/frame-01-spin-1.png"
+        },
+        {
+          "state": "spin-2",
+          "file": "ball/frame-02-spin-2.png"
+        },
+        {
+          "state": "spin-3",
+          "file": "ball/frame-03-spin-3.png"
+        }
+      ]
+    },
+    "flipper-left": {
+      "atlas": "flipper-left/atlas.png",
+      "frameSize": {
+        "width": 320,
+        "height": 320
+      },
+      "frameCount": 3,
+      "fps": 18,
+      "loop": false,
+      "pivot": {
+        "x": 0.2,
+        "y": 0.66
+      },
+      "frames": [
+        {
+          "state": "rest",
+          "file": "flipper-left/frame-00-rest.png"
+        },
+        {
+          "state": "mid",
+          "file": "flipper-left/frame-01-mid.png"
+        },
+        {
+          "state": "up",
+          "file": "flipper-left/frame-02-up.png"
+        }
+      ]
+    },
+    "flipper-right": {
+      "atlas": "flipper-right/atlas.png",
+      "frameSize": {
+        "width": 320,
+        "height": 320
+      },
+      "frameCount": 3,
+      "fps": 18,
+      "loop": false,
+      "pivot": {
+        "x": 0.8,
+        "y": 0.66
+      },
+      "frames": [
+        {
+          "state": "rest",
+          "file": "flipper-right/frame-00-rest.png"
+        },
+        {
+          "state": "mid",
+          "file": "flipper-right/frame-01-mid.png"
+        },
+        {
+          "state": "up",
+          "file": "flipper-right/frame-02-up.png"
+        }
+      ]
+    },
+    "plunger": {
+      "atlas": "plunger/atlas.png",
+      "frameSize": {
+        "width": 320,
+        "height": 320
+      },
+      "frameCount": 3,
+      "fps": 12,
+      "loop": false,
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92
+      },
+      "frames": [
+        {
+          "state": "rest",
+          "file": "plunger/frame-00-rest.png"
+        },
+        {
+          "state": "half-pull",
+          "file": "plunger/frame-01-half-pull.png"
+        },
+        {
+          "state": "full-pull",
+          "file": "plunger/frame-02-full-pull.png"
+        }
+      ]
+    },
+    "bumper": {
+      "atlas": "bumper/atlas.png",
+      "frameSize": {
+        "width": 320,
+        "height": 320
+      },
+      "frameCount": 4,
+      "fps": 14,
+      "loop": false,
+      "pivot": {
+        "x": 0.5,
+        "y": 0.56
+      },
+      "frames": [
+        {
+          "state": "idle",
+          "file": "bumper/frame-00-idle.png"
+        },
+        {
+          "state": "anticipation",
+          "file": "bumper/frame-01-anticipation.png"
+        },
+        {
+          "state": "impact",
+          "file": "bumper/frame-02-impact.png"
+        },
+        {
+          "state": "recovery",
+          "file": "bumper/frame-03-recovery.png"
+        }
+      ]
+    },
+    "target": {
+      "atlas": "target/atlas.png",
+      "frameSize": {
+        "width": 320,
+        "height": 320
+      },
+      "frameCount": 4,
+      "fps": 12,
+      "loop": false,
+      "pivot": {
+        "x": 0.5,
+        "y": 0.86
+      },
+      "frames": [
+        {
+          "state": "raised-unlit",
+          "file": "target/frame-00-raised-unlit.png"
+        },
+        {
+          "state": "raised-lit",
+          "file": "target/frame-01-raised-lit.png"
+        },
+        {
+          "state": "halfway-down",
+          "file": "target/frame-02-halfway-down.png"
+        },
+        {
+          "state": "down",
+          "file": "target/frame-03-down.png"
+        }
+      ]
+    },
+    "light": {
+      "atlas": "light/atlas.png",
+      "frameSize": {
+        "width": 192,
+        "height": 192
+      },
+      "frameCount": 3,
+      "fps": 6,
+      "loop": true,
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "frames": [
+        {
+          "state": "off",
+          "file": "light/frame-00-off.png"
+        },
+        {
+          "state": "on",
+          "file": "light/frame-01-on.png"
+        },
+        {
+          "state": "pulse",
+          "file": "light/frame-02-pulse.png"
+        }
+      ]
+    },
+    "jackpot-door": {
+      "atlas": "jackpot-door/atlas.png",
+      "frameSize": {
+        "width": 384,
+        "height": 384
+      },
+      "frameCount": 6,
+      "fps": 10,
+      "loop": false,
+      "pivot": {
+        "x": 0.5,
+        "y": 0.82
+      },
+      "frames": [
+        {
+          "state": "closed",
+          "file": "jackpot-door/frame-00-closed.png"
+        },
+        {
+          "state": "cracked",
+          "file": "jackpot-door/frame-01-cracked.png"
+        },
+        {
+          "state": "half-open",
+          "file": "jackpot-door/frame-02-half-open.png"
+        },
+        {
+          "state": "open",
+          "file": "jackpot-door/frame-03-open.png"
+        },
+        {
+          "state": "open-glow",
+          "file": "jackpot-door/frame-04-open-glow.png"
+        },
+        {
+          "state": "jackpot-flash",
+          "file": "jackpot-door/frame-05-jackpot-flash.png"
+        }
+      ]
+    }
+  }
+}
