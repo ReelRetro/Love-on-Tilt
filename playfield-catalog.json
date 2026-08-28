@@ -1,0 +1,41 @@
+{
+  "schema": "love-on-tilt/playfield-catalog@1",
+  "version": "1.0.0",
+  "coordinateSystem": "1024×1536 pixels plus normalized 0–1 coordinates",
+  "colorMaskLegend": {
+    "wall": "#ff245f",
+    "bumper": "#00e5ff",
+    "target": "#ffe45c",
+    "sensor": "#72ff63",
+    "drain": "#ff8a33",
+    "flipper": "#ffffff",
+    "sling": "#d36cff"
+  },
+  "collisionSourceOfTruth": "physics-manifest.json",
+  "boards": [
+    {
+      "id": "table-for-two",
+      "title": "Table for Two",
+      "manifest": "table-for-two/physics-manifest.json",
+      "debugPreview": "table-for-two/collision-debug.png",
+      "collisionMask": "table-for-two/collision-mask.png",
+      "foregroundOverlay": "table-for-two/foreground-overlay.png"
+    },
+    {
+      "id": "reel-romance",
+      "title": "Reel Romance",
+      "manifest": "reel-romance/physics-manifest.json",
+      "debugPreview": "reel-romance/collision-debug.png",
+      "collisionMask": "reel-romance/collision-mask.png",
+      "foregroundOverlay": "reel-romance/foreground-overlay.png"
+    },
+    {
+      "id": "bad-date-ghosted",
+      "title": "Bad Date: Ghosted",
+      "manifest": "bad-date-ghosted/physics-manifest.json",
+      "debugPreview": "bad-date-ghosted/collision-debug.png",
+      "collisionMask": "bad-date-ghosted/collision-mask.png",
+      "foregroundOverlay": "bad-date-ghosted/foreground-overlay.png"
+    }
+  ]
+}

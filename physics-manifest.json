@@ -1,0 +1,1489 @@
+{
+  "id": "table-for-two",
+  "title": "Table for Two",
+  "boardAsset": "../../boards/table-for-two.png",
+  "headerBottom": 178,
+  "playfieldBounds": [
+    [
+      20,
+      180
+    ],
+    [
+      1004,
+      180
+    ],
+    [
+      1004,
+      1518
+    ],
+    [
+      20,
+      1518
+    ]
+  ],
+  "launcher": {
+    "lane": [
+      [
+        894,
+        835
+      ],
+      [
+        982,
+        835
+      ],
+      [
+        982,
+        1490
+      ],
+      [
+        894,
+        1490
+      ]
+    ],
+    "spawn": [
+      936,
+      1220
+    ],
+    "launchDirectionDegrees": -90,
+    "exitSensor": {
+      "x": 854,
+      "y": 390,
+      "width": 112,
+      "height": 150
+    }
+  },
+  "flippers": [
+    {
+      "id": "main-left",
+      "side": "left",
+      "pivot": [
+        252,
+        1230
+      ],
+      "length": 166,
+      "thickness": 30,
+      "restAngle": 24,
+      "activeAngle": -28
+    },
+    {
+      "id": "main-right",
+      "side": "right",
+      "pivot": [
+        772,
+        1230
+      ],
+      "length": 166,
+      "thickness": 30,
+      "restAngle": 156,
+      "activeAngle": 208
+    },
+    {
+      "id": "upper-right",
+      "side": "right",
+      "pivot": [
+        894,
+        487
+      ],
+      "length": 108,
+      "thickness": 27,
+      "restAngle": 151,
+      "activeAngle": 205
+    }
+  ],
+  "bumpers": [
+    {
+      "id": "plate-1",
+      "center": [
+        391,
+        697
+      ],
+      "radius": 43
+    },
+    {
+      "id": "plate-2",
+      "center": [
+        468,
+        772
+      ],
+      "radius": 43
+    },
+    {
+      "id": "plate-3",
+      "center": [
+        569,
+        823
+      ],
+      "radius": 43
+    },
+    {
+      "id": "plate-4",
+      "center": [
+        681,
+        853
+      ],
+      "radius": 43
+    },
+    {
+      "id": "plate-5",
+      "center": [
+        785,
+        803
+      ],
+      "radius": 43
+    }
+  ],
+  "targets": [
+    {
+      "id": "target-c",
+      "label": "C",
+      "rect": [
+        236,
+        548,
+        70,
+        66
+      ]
+    },
+    {
+      "id": "target-h",
+      "label": "H",
+      "rect": [
+        236,
+        620,
+        70,
+        66
+      ]
+    },
+    {
+      "id": "target-e-1",
+      "label": "E",
+      "rect": [
+        236,
+        694,
+        70,
+        66
+      ]
+    },
+    {
+      "id": "target-e-2",
+      "label": "E",
+      "rect": [
+        236,
+        768,
+        70,
+        66
+      ]
+    },
+    {
+      "id": "target-r",
+      "label": "R",
+      "rect": [
+        236,
+        842,
+        70,
+        66
+      ]
+    },
+    {
+      "id": "target-s",
+      "label": "S",
+      "rect": [
+        236,
+        916,
+        70,
+        66
+      ]
+    }
+  ],
+  "slingshots": [
+    {
+      "id": "left-sling",
+      "polygon": [
+        [
+          160,
+          1050
+        ],
+        [
+          211,
+          1178
+        ],
+        [
+          351,
+          1210
+        ],
+        [
+          204,
+          1082
+        ]
+      ]
+    },
+    {
+      "id": "right-sling",
+      "polygon": [
+        [
+          864,
+          1050
+        ],
+        [
+          813,
+          1178
+        ],
+        [
+          673,
+          1210
+        ],
+        [
+          820,
+          1082
+        ]
+      ]
+    }
+  ],
+  "drains": [
+    {
+      "id": "center-drain",
+      "shape": "circle",
+      "center": [
+        512,
+        1340
+      ],
+      "radius": 50,
+      "event": "ballDrained"
+    },
+    {
+      "id": "left-outlane",
+      "shape": "rect",
+      "rect": [
+        58,
+        1362,
+        170,
+        145
+      ],
+      "event": "ballDrained"
+    },
+    {
+      "id": "right-outlane",
+      "shape": "rect",
+      "rect": [
+        796,
+        1362,
+        170,
+        145
+      ],
+      "event": "ballDrained"
+    }
+  ],
+  "walls": [
+    {
+      "id": "outer-left",
+      "thickness": 18,
+      "points": [
+        [
+          54,
+          188
+        ],
+        [
+          24,
+          226
+        ],
+        [
+          24,
+          1492
+        ],
+        [
+          420,
+          1515
+        ]
+      ]
+    },
+    {
+      "id": "outer-right",
+      "thickness": 18,
+      "points": [
+        [
+          972,
+          188
+        ],
+        [
+          1000,
+          226
+        ],
+        [
+          1000,
+          1492
+        ],
+        [
+          608,
+          1515
+        ]
+      ]
+    },
+    {
+      "id": "launcher-divider",
+      "thickness": 18,
+      "points": [
+        [
+          894,
+          1512
+        ],
+        [
+          894,
+          910
+        ],
+        [
+          866,
+          838
+        ],
+        [
+          852,
+          730
+        ],
+        [
+          850,
+          640
+        ],
+        [
+          825,
+          570
+        ]
+      ]
+    },
+    {
+      "id": "left-spiral-outer",
+      "thickness": 17,
+      "points": [
+        [
+          334,
+          559
+        ],
+        [
+          250,
+          554
+        ],
+        [
+          164,
+          520
+        ],
+        [
+          108,
+          462
+        ],
+        [
+          78,
+          386
+        ],
+        [
+          80,
+          312
+        ],
+        [
+          114,
+          252
+        ],
+        [
+          176,
+          218
+        ],
+        [
+          256,
+          210
+        ],
+        [
+          326,
+          230
+        ],
+        [
+          374,
+          276
+        ],
+        [
+          397,
+          338
+        ],
+        [
+          398,
+          412
+        ],
+        [
+          370,
+          480
+        ],
+        [
+          334,
+          522
+        ]
+      ]
+    },
+    {
+      "id": "left-spiral-inner",
+      "thickness": 15,
+      "points": [
+        [
+          328,
+          454
+        ],
+        [
+          274,
+          468
+        ],
+        [
+          215,
+          456
+        ],
+        [
+          175,
+          422
+        ],
+        [
+          156,
+          369
+        ],
+        [
+          164,
+          315
+        ],
+        [
+          198,
+          282
+        ],
+        [
+          250,
+          270
+        ],
+        [
+          300,
+          284
+        ],
+        [
+          330,
+          315
+        ],
+        [
+          341,
+          360
+        ],
+        [
+          338,
+          404
+        ],
+        [
+          321,
+          432
+        ]
+      ]
+    },
+    {
+      "id": "crossover-upper",
+      "thickness": 18,
+      "points": [
+        [
+          438,
+          315
+        ],
+        [
+          489,
+          286
+        ],
+        [
+          537,
+          311
+        ],
+        [
+          600,
+          405
+        ],
+        [
+          663,
+          498
+        ],
+        [
+          729,
+          565
+        ],
+        [
+          817,
+          614
+        ]
+      ]
+    },
+    {
+      "id": "crossover-lower",
+      "thickness": 18,
+      "points": [
+        [
+          463,
+          352
+        ],
+        [
+          500,
+          326
+        ],
+        [
+          540,
+          349
+        ],
+        [
+          594,
+          433
+        ],
+        [
+          650,
+          526
+        ],
+        [
+          720,
+          600
+        ],
+        [
+          816,
+          651
+        ]
+      ]
+    },
+    {
+      "id": "left-return-rail",
+      "thickness": 18,
+      "points": [
+        [
+          132,
+          517
+        ],
+        [
+          98,
+          556
+        ],
+        [
+          100,
+          906
+        ],
+        [
+          128,
+          1010
+        ],
+        [
+          180,
+          1118
+        ],
+        [
+          222,
+          1187
+        ]
+      ]
+    },
+    {
+      "id": "right-return-rail",
+      "thickness": 18,
+      "points": [
+        [
+          864,
+          590
+        ],
+        [
+          879,
+          718
+        ],
+        [
+          865,
+          871
+        ],
+        [
+          844,
+          1010
+        ],
+        [
+          807,
+          1110
+        ],
+        [
+          780,
+          1188
+        ]
+      ]
+    }
+  ],
+  "sensors": [
+    {
+      "id": "profile-door",
+      "type": "rect",
+      "rect": [
+        704,
+        413,
+        122,
+        96
+      ],
+      "event": "profileRevealDoor"
+    },
+    {
+      "id": "spiral-loop",
+      "type": "polygon",
+      "polygon": [
+        [
+          92,
+          250
+        ],
+        [
+          393,
+          250
+        ],
+        [
+          393,
+          548
+        ],
+        [
+          92,
+          548
+        ]
+      ],
+      "event": "toastTimeLoop"
+    },
+    {
+      "id": "crossover-ramp",
+      "type": "polygon",
+      "polygon": [
+        [
+          434,
+          288
+        ],
+        [
+          818,
+          585
+        ],
+        [
+          818,
+          658
+        ],
+        [
+          456,
+          370
+        ]
+      ],
+      "event": "rampCompleted"
+    },
+    {
+      "id": "extra-ball-shot",
+      "type": "rect",
+      "rect": [
+        838,
+        425,
+        92,
+        186
+      ],
+      "event": "extraBallShot"
+    },
+    {
+      "id": "skill-shot",
+      "type": "rect",
+      "rect": [
+        884,
+        720,
+        92,
+        120
+      ],
+      "event": "skillShot"
+    }
+  ],
+  "occlusionPaths": [
+    {
+      "id": "spiral-front-rail",
+      "width": 22,
+      "points": [
+        [
+          88,
+          372
+        ],
+        [
+          104,
+          462
+        ],
+        [
+          170,
+          528
+        ],
+        [
+          252,
+          556
+        ],
+        [
+          338,
+          552
+        ]
+      ]
+    },
+    {
+      "id": "crossover-front-rail",
+      "width": 24,
+      "points": [
+        [
+          463,
+          352
+        ],
+        [
+          540,
+          349
+        ],
+        [
+          594,
+          433
+        ],
+        [
+          650,
+          526
+        ],
+        [
+          720,
+          600
+        ],
+        [
+          816,
+          651
+        ]
+      ]
+    },
+    {
+      "id": "launcher-front-rail",
+      "width": 22,
+      "points": [
+        [
+          894,
+          1512
+        ],
+        [
+          894,
+          910
+        ],
+        [
+          866,
+          838
+        ],
+        [
+          852,
+          730
+        ]
+      ]
+    }
+  ],
+  "specialMode": "toast-time",
+  "schema": "love-on-tilt/physics-playfield@1",
+  "version": "1.0.0",
+  "canvas": {
+    "width": 1024,
+    "height": 1536
+  },
+  "sourceArtwork": "../../boards/table-for-two.png",
+  "layerOrder": [
+    "sourceArtwork",
+    "ball-and-runtime-mechanisms",
+    "foreground-overlay",
+    "hud-and-callouts"
+  ],
+  "tuning": {
+    "coordinateSystem": "top-left-origin-y-down",
+    "pixelsPerMeter": 100,
+    "gravity": {
+      "x": 0,
+      "y": 980
+    },
+    "fixedTimeStepSeconds": 0.0166667,
+    "maximumSubSteps": 3,
+    "ball": {
+      "radius": 16,
+      "mass": 1,
+      "restitution": 0.55,
+      "friction": 0.08,
+      "linearDamping": 0.035,
+      "maximumSpeed": 1800
+    },
+    "wall": {
+      "restitution": 0.52,
+      "friction": 0.1
+    },
+    "bumper": {
+      "restitution": 1.22,
+      "impulse": 760,
+      "cooldownMilliseconds": 90
+    },
+    "slingshot": {
+      "restitution": 1.05,
+      "impulse": 560,
+      "cooldownMilliseconds": 100
+    },
+    "flipper": {
+      "angularSpeedDegreesPerSecond": 720,
+      "returnSpeedDegreesPerSecond": 560,
+      "restitution": 0.35,
+      "friction": 0.18,
+      "maximumTorque": 1450
+    },
+    "plunger": {
+      "minimumImpulse": 650,
+      "maximumImpulse": 1700,
+      "fullChargeMilliseconds": 900
+    },
+    "nudge": {
+      "impulse": 120,
+      "lockoutMilliseconds": 350,
+      "tiltThreshold": 3
+    }
+  },
+  "normalized": {
+    "playfieldBounds": [
+      {
+        "x": 0.019531,
+        "y": 0.117188
+      },
+      {
+        "x": 0.980469,
+        "y": 0.117188
+      },
+      {
+        "x": 0.980469,
+        "y": 0.988281
+      },
+      {
+        "x": 0.019531,
+        "y": 0.988281
+      }
+    ],
+    "launcher": {
+      "lane": [
+        {
+          "x": 0.873047,
+          "y": 0.54362
+        },
+        {
+          "x": 0.958984,
+          "y": 0.54362
+        },
+        {
+          "x": 0.958984,
+          "y": 0.970052
+        },
+        {
+          "x": 0.873047,
+          "y": 0.970052
+        }
+      ],
+      "spawn": {
+        "x": 0.914063,
+        "y": 0.794271
+      },
+      "exitSensor": {
+        "x": 0.833984,
+        "y": 0.253906,
+        "width": 0.109375,
+        "height": 0.097656
+      }
+    },
+    "flippers": [
+      {
+        "id": "main-left",
+        "pivot": {
+          "x": 0.246094,
+          "y": 0.800781
+        },
+        "lengthX": 0.162109,
+        "thicknessY": 0.019531
+      },
+      {
+        "id": "main-right",
+        "pivot": {
+          "x": 0.753906,
+          "y": 0.800781
+        },
+        "lengthX": 0.162109,
+        "thicknessY": 0.019531
+      },
+      {
+        "id": "upper-right",
+        "pivot": {
+          "x": 0.873047,
+          "y": 0.317057
+        },
+        "lengthX": 0.105469,
+        "thicknessY": 0.017578
+      }
+    ],
+    "bumpers": [
+      {
+        "id": "plate-1",
+        "center": {
+          "x": 0.381836,
+          "y": 0.453776
+        },
+        "radiusX": 0.041992,
+        "radiusY": 0.027995
+      },
+      {
+        "id": "plate-2",
+        "center": {
+          "x": 0.457031,
+          "y": 0.502604
+        },
+        "radiusX": 0.041992,
+        "radiusY": 0.027995
+      },
+      {
+        "id": "plate-3",
+        "center": {
+          "x": 0.555664,
+          "y": 0.535807
+        },
+        "radiusX": 0.041992,
+        "radiusY": 0.027995
+      },
+      {
+        "id": "plate-4",
+        "center": {
+          "x": 0.665039,
+          "y": 0.555339
+        },
+        "radiusX": 0.041992,
+        "radiusY": 0.027995
+      },
+      {
+        "id": "plate-5",
+        "center": {
+          "x": 0.766602,
+          "y": 0.522786
+        },
+        "radiusX": 0.041992,
+        "radiusY": 0.027995
+      }
+    ],
+    "targets": [
+      {
+        "id": "target-c",
+        "rect": {
+          "x": 0.230469,
+          "y": 0.356771,
+          "width": 0.068359,
+          "height": 0.042969
+        }
+      },
+      {
+        "id": "target-h",
+        "rect": {
+          "x": 0.230469,
+          "y": 0.403646,
+          "width": 0.068359,
+          "height": 0.042969
+        }
+      },
+      {
+        "id": "target-e-1",
+        "rect": {
+          "x": 0.230469,
+          "y": 0.451823,
+          "width": 0.068359,
+          "height": 0.042969
+        }
+      },
+      {
+        "id": "target-e-2",
+        "rect": {
+          "x": 0.230469,
+          "y": 0.5,
+          "width": 0.068359,
+          "height": 0.042969
+        }
+      },
+      {
+        "id": "target-r",
+        "rect": {
+          "x": 0.230469,
+          "y": 0.548177,
+          "width": 0.068359,
+          "height": 0.042969
+        }
+      },
+      {
+        "id": "target-s",
+        "rect": {
+          "x": 0.230469,
+          "y": 0.596354,
+          "width": 0.068359,
+          "height": 0.042969
+        }
+      }
+    ],
+    "slingshots": [
+      {
+        "id": "left-sling",
+        "polygon": [
+          {
+            "x": 0.15625,
+            "y": 0.683594
+          },
+          {
+            "x": 0.206055,
+            "y": 0.766927
+          },
+          {
+            "x": 0.342773,
+            "y": 0.78776
+          },
+          {
+            "x": 0.199219,
+            "y": 0.704427
+          }
+        ]
+      },
+      {
+        "id": "right-sling",
+        "polygon": [
+          {
+            "x": 0.84375,
+            "y": 0.683594
+          },
+          {
+            "x": 0.793945,
+            "y": 0.766927
+          },
+          {
+            "x": 0.657227,
+            "y": 0.78776
+          },
+          {
+            "x": 0.800781,
+            "y": 0.704427
+          }
+        ]
+      }
+    ],
+    "drains": [
+      {
+        "id": "center-drain",
+        "center": {
+          "x": 0.5,
+          "y": 0.872396
+        },
+        "radiusX": 0.048828,
+        "radiusY": 0.032552
+      },
+      {
+        "id": "left-outlane",
+        "rect": {
+          "x": 0.056641,
+          "y": 0.886719,
+          "width": 0.166016,
+          "height": 0.094401
+        }
+      },
+      {
+        "id": "right-outlane",
+        "rect": {
+          "x": 0.777344,
+          "y": 0.886719,
+          "width": 0.166016,
+          "height": 0.094401
+        }
+      }
+    ],
+    "walls": [
+      {
+        "id": "outer-left",
+        "points": [
+          {
+            "x": 0.052734,
+            "y": 0.122396
+          },
+          {
+            "x": 0.023438,
+            "y": 0.147135
+          },
+          {
+            "x": 0.023438,
+            "y": 0.971354
+          },
+          {
+            "x": 0.410156,
+            "y": 0.986328
+          }
+        ],
+        "thicknessX": 0.017578
+      },
+      {
+        "id": "outer-right",
+        "points": [
+          {
+            "x": 0.949219,
+            "y": 0.122396
+          },
+          {
+            "x": 0.976563,
+            "y": 0.147135
+          },
+          {
+            "x": 0.976563,
+            "y": 0.971354
+          },
+          {
+            "x": 0.59375,
+            "y": 0.986328
+          }
+        ],
+        "thicknessX": 0.017578
+      },
+      {
+        "id": "launcher-divider",
+        "points": [
+          {
+            "x": 0.873047,
+            "y": 0.984375
+          },
+          {
+            "x": 0.873047,
+            "y": 0.592448
+          },
+          {
+            "x": 0.845703,
+            "y": 0.545573
+          },
+          {
+            "x": 0.832031,
+            "y": 0.47526
+          },
+          {
+            "x": 0.830078,
+            "y": 0.416667
+          },
+          {
+            "x": 0.805664,
+            "y": 0.371094
+          }
+        ],
+        "thicknessX": 0.017578
+      },
+      {
+        "id": "left-spiral-outer",
+        "points": [
+          {
+            "x": 0.326172,
+            "y": 0.363932
+          },
+          {
+            "x": 0.244141,
+            "y": 0.360677
+          },
+          {
+            "x": 0.160156,
+            "y": 0.338542
+          },
+          {
+            "x": 0.105469,
+            "y": 0.300781
+          },
+          {
+            "x": 0.076172,
+            "y": 0.251302
+          },
+          {
+            "x": 0.078125,
+            "y": 0.203125
+          },
+          {
+            "x": 0.111328,
+            "y": 0.164063
+          },
+          {
+            "x": 0.171875,
+            "y": 0.141927
+          },
+          {
+            "x": 0.25,
+            "y": 0.136719
+          },
+          {
+            "x": 0.318359,
+            "y": 0.14974
+          },
+          {
+            "x": 0.365234,
+            "y": 0.179688
+          },
+          {
+            "x": 0.387695,
+            "y": 0.220052
+          },
+          {
+            "x": 0.388672,
+            "y": 0.268229
+          },
+          {
+            "x": 0.361328,
+            "y": 0.3125
+          },
+          {
+            "x": 0.326172,
+            "y": 0.339844
+          }
+        ],
+        "thicknessX": 0.016602
+      },
+      {
+        "id": "left-spiral-inner",
+        "points": [
+          {
+            "x": 0.320313,
+            "y": 0.295573
+          },
+          {
+            "x": 0.267578,
+            "y": 0.304688
+          },
+          {
+            "x": 0.209961,
+            "y": 0.296875
+          },
+          {
+            "x": 0.170898,
+            "y": 0.27474
+          },
+          {
+            "x": 0.152344,
+            "y": 0.240234
+          },
+          {
+            "x": 0.160156,
+            "y": 0.205078
+          },
+          {
+            "x": 0.193359,
+            "y": 0.183594
+          },
+          {
+            "x": 0.244141,
+            "y": 0.175781
+          },
+          {
+            "x": 0.292969,
+            "y": 0.184896
+          },
+          {
+            "x": 0.322266,
+            "y": 0.205078
+          },
+          {
+            "x": 0.333008,
+            "y": 0.234375
+          },
+          {
+            "x": 0.330078,
+            "y": 0.263021
+          },
+          {
+            "x": 0.313477,
+            "y": 0.28125
+          }
+        ],
+        "thicknessX": 0.014648
+      },
+      {
+        "id": "crossover-upper",
+        "points": [
+          {
+            "x": 0.427734,
+            "y": 0.205078
+          },
+          {
+            "x": 0.477539,
+            "y": 0.186198
+          },
+          {
+            "x": 0.524414,
+            "y": 0.202474
+          },
+          {
+            "x": 0.585938,
+            "y": 0.263672
+          },
+          {
+            "x": 0.647461,
+            "y": 0.324219
+          },
+          {
+            "x": 0.711914,
+            "y": 0.367839
+          },
+          {
+            "x": 0.797852,
+            "y": 0.39974
+          }
+        ],
+        "thicknessX": 0.017578
+      },
+      {
+        "id": "crossover-lower",
+        "points": [
+          {
+            "x": 0.452148,
+            "y": 0.229167
+          },
+          {
+            "x": 0.488281,
+            "y": 0.21224
+          },
+          {
+            "x": 0.527344,
+            "y": 0.227214
+          },
+          {
+            "x": 0.580078,
+            "y": 0.281901
+          },
+          {
+            "x": 0.634766,
+            "y": 0.342448
+          },
+          {
+            "x": 0.703125,
+            "y": 0.390625
+          },
+          {
+            "x": 0.796875,
+            "y": 0.423828
+          }
+        ],
+        "thicknessX": 0.017578
+      },
+      {
+        "id": "left-return-rail",
+        "points": [
+          {
+            "x": 0.128906,
+            "y": 0.336589
+          },
+          {
+            "x": 0.095703,
+            "y": 0.361979
+          },
+          {
+            "x": 0.097656,
+            "y": 0.589844
+          },
+          {
+            "x": 0.125,
+            "y": 0.657552
+          },
+          {
+            "x": 0.175781,
+            "y": 0.727865
+          },
+          {
+            "x": 0.216797,
+            "y": 0.772786
+          }
+        ],
+        "thicknessX": 0.017578
+      },
+      {
+        "id": "right-return-rail",
+        "points": [
+          {
+            "x": 0.84375,
+            "y": 0.384115
+          },
+          {
+            "x": 0.858398,
+            "y": 0.467448
+          },
+          {
+            "x": 0.844727,
+            "y": 0.567057
+          },
+          {
+            "x": 0.824219,
+            "y": 0.657552
+          },
+          {
+            "x": 0.788086,
+            "y": 0.722656
+          },
+          {
+            "x": 0.761719,
+            "y": 0.773438
+          }
+        ],
+        "thicknessX": 0.017578
+      }
+    ],
+    "circularWalls": [],
+    "sensors": [
+      {
+        "id": "profile-door",
+        "rect": {
+          "x": 0.6875,
+          "y": 0.26888,
+          "width": 0.119141,
+          "height": 0.0625
+        }
+      },
+      {
+        "id": "spiral-loop",
+        "polygon": [
+          {
+            "x": 0.089844,
+            "y": 0.16276
+          },
+          {
+            "x": 0.383789,
+            "y": 0.16276
+          },
+          {
+            "x": 0.383789,
+            "y": 0.356771
+          },
+          {
+            "x": 0.089844,
+            "y": 0.356771
+          }
+        ]
+      },
+      {
+        "id": "crossover-ramp",
+        "polygon": [
+          {
+            "x": 0.423828,
+            "y": 0.1875
+          },
+          {
+            "x": 0.798828,
+            "y": 0.380859
+          },
+          {
+            "x": 0.798828,
+            "y": 0.428385
+          },
+          {
+            "x": 0.445313,
+            "y": 0.240885
+          }
+        ]
+      },
+      {
+        "id": "extra-ball-shot",
+        "rect": {
+          "x": 0.818359,
+          "y": 0.276693,
+          "width": 0.089844,
+          "height": 0.121094
+        }
+      },
+      {
+        "id": "skill-shot",
+        "rect": {
+          "x": 0.863281,
+          "y": 0.46875,
+          "width": 0.089844,
+          "height": 0.078125
+        }
+      }
+    ]
+  },
+  "files": {
+    "collisionMask": "collision-mask.png",
+    "collisionDebug": "collision-debug.png",
+    "foregroundMask": "foreground-mask.png",
+    "foregroundOverlay": "foreground-overlay.png"
+  },
+  "implementationNote": "Pixel coordinates are authoritative for the 1024×1536 source. Normalized coordinates are provided for responsive scaling. Tune collider placement in the target engine after device-level playtesting."
+}

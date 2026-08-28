@@ -1,0 +1,91 @@
+{
+  "schema": "reel-love/profile-reveal-contract@1",
+  "version": "1.0.0",
+  "description": "Host-app event contract for earned profile reveals in Love on Tilt.",
+  "gameToHost": [
+    {
+      "event": "loveOnTilt.sessionStarted",
+      "payload": {
+        "sessionId": "string",
+        "boardId": "string",
+        "requestedCandidateCount": 3
+      }
+    },
+    {
+      "event": "loveOnTilt.profileRevealEarned",
+      "payload": {
+        "sessionId": "string",
+        "boardId": "string",
+        "revealNumber": "integer:1..3",
+        "score": "integer",
+        "trigger": "objective-door|first-reel-assist"
+      }
+    },
+    {
+      "event": "loveOnTilt.profileDecision",
+      "payload": {
+        "sessionId": "string",
+        "candidateToken": "opaque-string",
+        "decision": "INTERESTED|KEEP_PLAYING"
+      }
+    },
+    {
+      "event": "loveOnTilt.sessionEnded",
+      "payload": {
+        "sessionId": "string",
+        "reason": "profile-target-complete|balls-exhausted|player-exit",
+        "score": "integer",
+        "profilesRevealed": "integer:0..3"
+      }
+    }
+  ],
+  "hostToGame": [
+    {
+      "event": "reelLove.profileCandidatesReady",
+      "payload": {
+        "sessionId": "string",
+        "candidateTokens": "opaque-string[]"
+      }
+    },
+    {
+      "event": "reelLove.profileRevealReady",
+      "payload": {
+        "sessionId": "string",
+        "candidateToken": "opaque-string",
+        "profile": {
+          "theReelYouVideo": "host-controlled-media-reference",
+          "firstName": "string",
+          "age": "integer",
+          "generalLocation": "string",
+          "headline": "string",
+          "interests": "string[]",
+          "verificationIndicator": "boolean"
+        }
+      }
+    },
+    {
+      "event": "reelLove.profileRevealUnavailable",
+      "payload": {
+        "sessionId": "string",
+        "reason": "empty-eligible-pool|load-failed|candidate-became-ineligible",
+        "retryable": "boolean"
+      }
+    },
+    {
+      "event": "reelLove.profileDecisionRecorded",
+      "payload": {
+        "sessionId": "string",
+        "candidateToken": "opaque-string",
+        "recorded": "boolean",
+        "mutualConnectionCreated": "boolean"
+      }
+    }
+  ],
+  "privacyRules": [
+    "The game receives only display-safe profile fields and opaque candidate tokens.",
+    "The host app enforces discovery preferences, location, blocking, visibility, safety, and repeat suppression.",
+    "The game never ranks candidates using score or play behavior.",
+    "INTERESTED remains private unless the host app confirms mutual interest.",
+    "The game does not store profile data after the session ends."
+  ]
+}

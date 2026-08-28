@@ -1,0 +1,459 @@
+{
+  "schema": "love-on-tilt/ui-runtime-assets@1",
+  "version": "1.2.0",
+  "imageRendering": "pixelated",
+  "primaryObjective": "earned-profile-reveals",
+  "appLevelCosmeticRewards": false,
+  "arcadeTicketMeaning": "session-only-bonus-marker",
+  "achievementBadgeMeaning": "session-only-callout",
+  "collections": {
+    "extra-ball": {
+      "atlas": "extra-ball/atlas.png",
+      "frameSize": {
+        "width": 256,
+        "height": 256
+      },
+      "frameCount": 4,
+      "fps": 8,
+      "loop": false,
+      "usage": "Extra ball icon and award animation.",
+      "frames": [
+        {
+          "state": "idle",
+          "file": "extra-ball/frame-00-idle.png",
+          "label": null
+        },
+        {
+          "state": "glow",
+          "file": "extra-ball/frame-01-glow.png",
+          "label": null
+        },
+        {
+          "state": "pulse",
+          "file": "extra-ball/frame-02-pulse.png",
+          "label": null
+        },
+        {
+          "state": "award-burst",
+          "file": "extra-ball/frame-03-award-burst.png",
+          "label": null
+        }
+      ]
+    },
+    "ball-save": {
+      "atlas": "ball-save/atlas.png",
+      "frameSize": {
+        "width": 256,
+        "height": 256
+      },
+      "frameCount": 4,
+      "fps": 10,
+      "loop": false,
+      "usage": "Shield state and saved-ball impact animation.",
+      "frames": [
+        {
+          "state": "unlit",
+          "file": "ball-save/frame-00-unlit.png",
+          "label": null
+        },
+        {
+          "state": "active",
+          "file": "ball-save/frame-01-active.png",
+          "label": null
+        },
+        {
+          "state": "impact",
+          "file": "ball-save/frame-02-impact.png",
+          "label": null
+        },
+        {
+          "state": "break",
+          "file": "ball-save/frame-03-break.png",
+          "label": null
+        }
+      ]
+    },
+    "chemistry-meter": {
+      "atlas": "chemistry-meter/atlas.png",
+      "frameSize": {
+        "width": 384,
+        "height": 160
+      },
+      "frameCount": 5,
+      "fps": 0,
+      "loop": false,
+      "usage": "Discrete Chemistry HUD states. The engine selects a frame; it does not play them as a timed animation.",
+      "values": [
+        0,
+        25,
+        50,
+        75,
+        100
+      ],
+      "frames": [
+        {
+          "state": "empty",
+          "file": "chemistry-meter/frame-00-empty.png",
+          "label": null
+        },
+        {
+          "state": "25-percent",
+          "file": "chemistry-meter/frame-01-25-percent.png",
+          "label": null
+        },
+        {
+          "state": "50-percent",
+          "file": "chemistry-meter/frame-02-50-percent.png",
+          "label": null
+        },
+        {
+          "state": "75-percent",
+          "file": "chemistry-meter/frame-03-75-percent.png",
+          "label": null
+        },
+        {
+          "state": "full",
+          "file": "chemistry-meter/frame-04-full.png",
+          "label": null
+        }
+      ]
+    },
+    "heart-collectible": {
+      "atlas": "heart-collectible/atlas.png",
+      "frameSize": {
+        "width": 256,
+        "height": 256
+      },
+      "frameCount": 3,
+      "fps": 8,
+      "loop": false,
+      "usage": "Profile Reel progress heart and table collectible.",
+      "frames": [
+        {
+          "state": "idle",
+          "file": "heart-collectible/frame-00-idle.png",
+          "label": null
+        },
+        {
+          "state": "pulse",
+          "file": "heart-collectible/frame-01-pulse.png",
+          "label": null
+        },
+        {
+          "state": "collect-burst",
+          "file": "heart-collectible/frame-02-collect-burst.png",
+          "label": null
+        }
+      ]
+    },
+    "multiplier": {
+      "atlas": "multiplier/atlas.png",
+      "frameSize": {
+        "width": 256,
+        "height": 256
+      },
+      "frameCount": 4,
+      "fps": 0,
+      "loop": false,
+      "usage": "Exact multiplier medallions.",
+      "frames": [
+        {
+          "state": "x2",
+          "file": "multiplier/frame-00-x2.png",
+          "label": "×2"
+        },
+        {
+          "state": "x3",
+          "file": "multiplier/frame-01-x3.png",
+          "label": "×3"
+        },
+        {
+          "state": "x4",
+          "file": "multiplier/frame-02-x4.png",
+          "label": "×4"
+        },
+        {
+          "state": "x5",
+          "file": "multiplier/frame-03-x5.png",
+          "label": "×5"
+        }
+      ]
+    },
+    "double-date-multiball": {
+      "atlas": "double-date-multiball/atlas.png",
+      "frameSize": {
+        "width": 320,
+        "height": 320
+      },
+      "frameCount": 4,
+      "fps": 10,
+      "loop": false,
+      "usage": "Four-frame Double Date two-ball celebration.",
+      "frames": [
+        {
+          "state": "approach",
+          "file": "double-date-multiball/frame-00-approach.png",
+          "label": null
+        },
+        {
+          "state": "collision",
+          "file": "double-date-multiball/frame-01-collision.png",
+          "label": null
+        },
+        {
+          "state": "heart-burst",
+          "file": "double-date-multiball/frame-02-heart-burst.png",
+          "label": null
+        },
+        {
+          "state": "celebration",
+          "file": "double-date-multiball/frame-03-celebration.png",
+          "label": "DOUBLE DATE"
+        }
+      ]
+    },
+    "reward-banner-animation": {
+      "atlas": "reward-banner-animation/atlas.png",
+      "frameSize": {
+        "width": 512,
+        "height": 192
+      },
+      "frameCount": 4,
+      "fps": 12,
+      "loop": false,
+      "usage": "Blank reward-banner transition for runtime-composed messages.",
+      "frames": [
+        {
+          "state": "closed",
+          "file": "reward-banner-animation/frame-00-closed.png",
+          "label": null
+        },
+        {
+          "state": "expand",
+          "file": "reward-banner-animation/frame-01-expand.png",
+          "label": null
+        },
+        {
+          "state": "lit",
+          "file": "reward-banner-animation/frame-02-lit.png",
+          "label": null
+        },
+        {
+          "state": "flash",
+          "file": "reward-banner-animation/frame-03-flash.png",
+          "label": null
+        }
+      ]
+    },
+    "reward-banner": {
+      "atlas": "reward-banner/atlas.png",
+      "frameSize": {
+        "width": 512,
+        "height": 192
+      },
+      "frameCount": 5,
+      "fps": 0,
+      "loop": false,
+      "usage": "Exact, static reward callouts.",
+      "frames": [
+        {
+          "state": "extra-ball",
+          "file": "reward-banner/frame-00-extra-ball.png",
+          "label": "EXTRA BALL"
+        },
+        {
+          "state": "ball-save",
+          "file": "reward-banner/frame-01-ball-save.png",
+          "label": "BALL SAVE"
+        },
+        {
+          "state": "double-date",
+          "file": "reward-banner/frame-02-double-date.png",
+          "label": "DOUBLE DATE"
+        },
+        {
+          "state": "profile-reveal",
+          "file": "reward-banner/frame-03-profile-reveal.png",
+          "label": "PROFILE REVEAL"
+        },
+        {
+          "state": "super-jackpot",
+          "file": "reward-banner/frame-04-super-jackpot.png",
+          "label": "SUPER JACKPOT"
+        }
+      ]
+    },
+    "jackpot-numeral": {
+      "atlas": "jackpot-numeral/atlas.png",
+      "frameSize": {
+        "width": 512,
+        "height": 220
+      },
+      "frameCount": 4,
+      "fps": 0,
+      "loop": false,
+      "usage": "Exact escalating jackpot values.",
+      "frames": [
+        {
+          "state": "5000",
+          "file": "jackpot-numeral/frame-00-5000.png",
+          "label": "5,000"
+        },
+        {
+          "state": "10000",
+          "file": "jackpot-numeral/frame-01-10000.png",
+          "label": "10,000"
+        },
+        {
+          "state": "25000",
+          "file": "jackpot-numeral/frame-02-25000.png",
+          "label": "25,000"
+        },
+        {
+          "state": "50000",
+          "file": "jackpot-numeral/frame-03-50000.png",
+          "label": "50,000"
+        }
+      ]
+    },
+    "arcade-ticket": {
+      "atlas": "arcade-ticket/atlas.png",
+      "frameSize": {
+        "width": 384,
+        "height": 220
+      },
+      "frameCount": 4,
+      "fps": 8,
+      "loop": true,
+      "usage": "Session-only in-game bonus marker; not persistent currency and not an app-level reward.",
+      "frames": [
+        {
+          "state": "front",
+          "file": "arcade-ticket/frame-00-front.png",
+          "label": "ARCADE"
+        },
+        {
+          "state": "turn",
+          "file": "arcade-ticket/frame-01-turn.png",
+          "label": "ARCADE"
+        },
+        {
+          "state": "edge",
+          "file": "arcade-ticket/frame-02-edge.png",
+          "label": null
+        },
+        {
+          "state": "sparkle",
+          "file": "arcade-ticket/frame-03-sparkle.png",
+          "label": "ARCADE"
+        }
+      ]
+    },
+    "achievement-badge": {
+      "atlas": "achievement-badge/atlas.png",
+      "frameSize": {
+        "width": 320,
+        "height": 320
+      },
+      "frameCount": 8,
+      "fps": 0,
+      "loop": false,
+      "usage": "Session achievement callouts only; no persistent app economy or profile-ranking benefit.",
+      "frames": [
+        {
+          "state": "first-reel",
+          "file": "achievement-badge/frame-00-first-reel.png",
+          "label": "FIRST REEL"
+        },
+        {
+          "state": "double-date",
+          "file": "achievement-badge/frame-01-double-date.png",
+          "label": "DOUBLE DATE"
+        },
+        {
+          "state": "jackpot",
+          "file": "achievement-badge/frame-02-jackpot.png",
+          "label": "JACKPOT"
+        },
+        {
+          "state": "full-chemistry",
+          "file": "achievement-badge/frame-03-full-chemistry.png",
+          "label": "100% CHEM"
+        },
+        {
+          "state": "table-ready",
+          "file": "achievement-badge/frame-04-table-ready.png",
+          "label": "TABLE READY"
+        },
+        {
+          "state": "now-showing",
+          "file": "achievement-badge/frame-05-now-showing.png",
+          "label": "NOW SHOWING"
+        },
+        {
+          "state": "unghosted",
+          "file": "achievement-badge/frame-06-unghosted.png",
+          "label": "UN-GHOSTED"
+        },
+        {
+          "state": "high-score",
+          "file": "achievement-badge/frame-07-high-score.png",
+          "label": "HIGH SCORE"
+        }
+      ]
+    },
+    "end-of-ball-panel": {
+      "atlas": "end-of-ball-panel/atlas.png",
+      "frameSize": {
+        "width": 512,
+        "height": 320
+      },
+      "frameCount": 4,
+      "fps": 10,
+      "loop": false,
+      "usage": "Animated tally panel. Runtime numbers are drawn into the declared text slots.",
+      "frames": [
+        {
+          "state": "closed",
+          "file": "end-of-ball-panel/frame-00-closed.png",
+          "label": null
+        },
+        {
+          "state": "unfolding",
+          "file": "end-of-ball-panel/frame-01-unfolding.png",
+          "label": "END OF BALL"
+        },
+        {
+          "state": "open",
+          "file": "end-of-ball-panel/frame-02-open.png",
+          "label": "END OF BALL / SCORE   BONUS   TOTAL"
+        },
+        {
+          "state": "complete",
+          "file": "end-of-ball-panel/frame-03-complete.png",
+          "label": "END OF BALL / SCORE   BONUS   TOTAL"
+        }
+      ],
+      "runtimeTextSlots": [
+        {
+          "id": "score",
+          "x": 0.28,
+          "y": 0.7,
+          "align": "center"
+        },
+        {
+          "id": "bonus",
+          "x": 0.5,
+          "y": 0.7,
+          "align": "center"
+        },
+        {
+          "id": "total",
+          "x": 0.72,
+          "y": 0.7,
+          "align": "center"
+        }
+      ]
+    }
+  }
+}
