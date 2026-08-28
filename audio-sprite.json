@@ -1,0 +1,171 @@
+{
+  "schema": "love-on-tilt/audio-sprite@1",
+  "spritemap": {
+    "flipper-up": [
+      0.0,
+      104.989,
+      false
+    ],
+    "flipper-down": [
+      204.989,
+      120.0,
+      false
+    ],
+    "plunger-pull": [
+      424.989,
+      480.0,
+      false
+    ],
+    "plunger-release": [
+      1004.989,
+      180.0,
+      false
+    ],
+    "ball-launch": [
+      1284.989,
+      480.0,
+      false
+    ],
+    "ball-roll-loop": [
+      1864.989,
+      1200.0,
+      true
+    ],
+    "wall-hit": [
+      3164.989,
+      110.0,
+      false
+    ],
+    "bumper-hit-1": [
+      3374.989,
+      160.0,
+      false
+    ],
+    "bumper-hit-2": [
+      3634.989,
+      160.0,
+      false
+    ],
+    "bumper-hit-3": [
+      3894.989,
+      160.0,
+      false
+    ],
+    "target-hit": [
+      4154.989,
+      94.989,
+      false
+    ],
+    "target-bank-complete": [
+      4349.977,
+      460.0,
+      false
+    ],
+    "slingshot-hit": [
+      4909.977,
+      130.0,
+      false
+    ],
+    "ball-save": [
+      5139.977,
+      480.0,
+      false
+    ],
+    "extra-ball": [
+      5719.977,
+      620.0,
+      false
+    ],
+    "chemistry-25": [
+      6439.977,
+      270.0,
+      false
+    ],
+    "chemistry-50": [
+      6809.977,
+      344.989,
+      false
+    ],
+    "chemistry-75": [
+      7254.966,
+      420.0,
+      false
+    ],
+    "chemistry-100": [
+      7774.966,
+      569.977,
+      false
+    ],
+    "multiball-start": [
+      8444.943,
+      1100.0,
+      false
+    ],
+    "jackpot": [
+      9644.943,
+      1250.0,
+      false
+    ],
+    "super-jackpot": [
+      10994.943,
+      1700.0,
+      false
+    ],
+    "heart-collect": [
+      12794.943,
+      344.989,
+      false
+    ],
+    "profile-door-open": [
+      13239.932,
+      850.0,
+      false
+    ],
+    "profile-reveal": [
+      14189.932,
+      569.977,
+      false
+    ],
+    "ball-drain": [
+      14859.909,
+      820.0,
+      false
+    ],
+    "tally-tick": [
+      15779.909,
+      44.989,
+      false
+    ],
+    "achievement": [
+      15924.898,
+      460.0,
+      false
+    ],
+    "tilt-warning": [
+      16484.898,
+      550.0,
+      false
+    ],
+    "tilt": [
+      17134.898,
+      900.0,
+      false
+    ],
+    "ui-select": [
+      18134.898,
+      230.0,
+      false
+    ],
+    "ui-back": [
+      18464.898,
+      260.0,
+      false
+    ]
+  },
+  "durationMs": 18824.898,
+  "gapMs": 100,
+  "urls": [
+    "audio-sprite.ogg",
+    "audio-sprite.wav"
+  ]
+}
